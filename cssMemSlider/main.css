@@ -17,11 +17,12 @@ p {
 }
 input {
     position: relative;
-    top: 0;
-    left: 93%;
+    left: 90%;
+    top: 825px;
 }
 .content {
     width: 75%;
+    height: 90vh;
     margin: 0 auto;
     overflow-x: hidden;
     background-color: gray;
@@ -79,4 +80,61 @@ input {
     opacity: 1;
     transform: translate(-520%);
     
+}
+
+
+@media (max-width: 768px) {
+ p {
+     margin-top: 50px;
+     margin-left: 5px;
+
+     width: 100%;
+     font-size: 10px;
+     font-weight: 300;
+ }
+ .poppy2:checked ~ .main-block {
+    transform: translate(-100%);
+}
+.poppy2:checked ~ .bottom-block p:nth-child(2) {
+    opacity: 1;
+    transform: translate(-100%);
+    
+}
+.poppy3:checked ~ .main-block {
+    transform: translate(-200%);
+}
+.poppy3:checked ~ .bottom-block p:nth-child(3) {
+    opacity: 1;
+    transform: translate(-200%);
+    
+}
+.poppy4:checked ~ .main-block {
+    transform: translate(-300%);
+}
+.poppy4:checked ~ .bottom-block p:nth-child(4) {
+    opacity: 1;
+    transform: translate(-310%);
+    
+}
+.poppy5:checked ~ .main-block {
+    transform: translate(-400%);
+}
+.poppy5:checked ~ .bottom-block p:nth-child(5) {
+    opacity: 1;
+    transform: translate(-410%);
+    
+}
+ input {
+     left: 45%;
+     top:360px;
+ }
+ 
+}
+
+
+@media (max-width: 320px) {
+input {
+    left: 35%;
+    top: 170px;
+}
 }
