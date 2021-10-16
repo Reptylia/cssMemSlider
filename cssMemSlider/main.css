@@ -25,7 +25,7 @@ label {
     width: 3em;
     height: 3em;
     left: 70%;
-    top: 835px;
+    top: 865px;
     cursor: pointer;
     
 }
@@ -74,9 +74,9 @@ input:checked+label::before {
   }
 .content {
     width: 75%;
-    height: 91vh;
+    height: 95vh;
     margin: 0 auto;
-    overflow-x: hidden;
+    overflow: hidden;
     background-color: gray;
     border: 10px solid gray;
     border-radius: 1%;
@@ -138,7 +138,7 @@ input:checked+label::before {
 @media (max-width: 768px) {
  p {
      margin-top: 80px;
-     margin-left: 15px;
+     margin-left: 19px;
 
      width: 100%;
      font-size: 20px;
@@ -179,7 +179,7 @@ input:checked+label::before {
 }
  label {
      left: 15%;
-     top:340px;
+     top:370px;
  }
  
 }
