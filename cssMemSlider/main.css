@@ -3,32 +3,80 @@
 }
 
 img {
-    width: 100%;
-    position: relative;
+  width: 100%;
+  
 }
 
+p {
+    opacity: 0;
+    transition: 0.5s;
+    transform: translate(1300%);
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+}
+input {
+    position: relative;
+    top: 0;
+    left: 93%;
+}
 .content {
     width: 75%;
     margin: 0 auto;
-    overflow: hidden;
+    overflow-x: hidden;
+    background-color: gray;
+    border: 10px solid gray;
+    border-radius: 1%;
 }
 .main-block {
     display: flex;
-    transition: 1s;
+    transition: 0.5s;
     
 }
 
 .bottom-block {
     display: flex;
-    justify-content: space-between;
+    
+    
 }
 
 .poppy1:checked ~ .main-block {
     transform: translate(0%);
 }
+.poppy1:checked ~ .bottom-block p:nth-child(1) {
+    opacity: 1;
+    transform: translate(0%);
+    
+}
 .poppy2:checked ~ .main-block {
     transform: translate(-100%);
 }
+.poppy2:checked ~ .bottom-block p:nth-child(2) {
+    opacity: 1;
+    transform: translate(-120%);
+    
+}
 .poppy3:checked ~ .main-block {
     transform: translate(-200%);
+}
+.poppy3:checked ~ .bottom-block p:nth-child(3) {
+    opacity: 1;
+    transform: translate(-290%);
+    
+}
+.poppy4:checked ~ .main-block {
+    transform: translate(-300%);
+}
+.poppy4:checked ~ .bottom-block p:nth-child(4) {
+    opacity: 1;
+    transform: translate(-220%);
+    
+}
+.poppy5:checked ~ .main-block {
+    transform: translate(-400%);
+}
+.poppy5:checked ~ .bottom-block p:nth-child(5) {
+    opacity: 1;
+    transform: translate(-520%);
+    
 }
